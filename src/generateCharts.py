@@ -65,13 +65,6 @@ def chart_hourly_pattern():
     # Highlight overnight hours (midnight to 6 AM)
     ax.axvspan(0, 6, alpha=0.1, color='gray', label='Overnight (US)')
     
-    # Mark 4 AM specifically
-    ax.axvline(x=4, color='#e74c3c', linestyle='--', alpha=0.7, linewidth=1.5)
-    ax.annotate('4 AM\n(Black Friday spike)', xy=(4, btc_pct.iloc[4]), 
-                xytext=(6, btc_pct.iloc[4] + 1.5),
-                fontsize=9, color='#e74c3c',
-                arrowprops=dict(arrowstyle='->', color='#e74c3c', lw=1))
-    
     ax.set_xlabel('Hour of Day (Eastern Time)')
     ax.set_ylabel('% of Daily Trades')
     ax.set_title('When Trading Happens: Bitcoin Daily vs NFL (2025)')
