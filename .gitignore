@@ -1,0 +1,15 @@
+# Data files - too large for git, regenerate with: npm run download && npm run combine
+data/
+*.csv
+*.parquet
+*.json
+!package.json
+!tsconfig.json
+
+# Node
+node_modules/
+dist/
+
+# OS
+.DS_Store
+

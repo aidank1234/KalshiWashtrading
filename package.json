@@ -1,0 +1,19 @@
+{
+  "name": "kalshi-wash-trading",
+  "version": "1.0.0",
+  "description": "Wash trading detection analysis for Kalshi prediction markets",
+  "type": "module",
+  "scripts": {
+    "test": "npx tsx src/downloadHistory.ts test",
+    "download": "npx tsx src/downloadHistory.ts download",
+    "combine": "npx tsx src/downloadHistory.ts combine"
+  },
+  "dependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0"
+  }
+}
+
